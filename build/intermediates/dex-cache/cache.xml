@@ -2,60 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Rasta\AndroidStudioProjects\RegexGolf\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jar="C:\Users\Rasta\Documents\GitHub\RegexGolf\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.1"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="C:\Users\Rasta\AndroidStudioProjects\RegexGolf\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_9c16b754e5c8aca40fddb0d7ae3c9c3e5777e843\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Rasta\AndroidStudioProjects\RegexGolf\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        revision="24.0.1"
-        sha1="cf36cc4b153f5034ee23a8a589a6106a37ed24c2">
-        <dex dex="C:\Users\Rasta\AndroidStudioProjects\RegexGolf\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d5d06caca2bb41a942e17dbddbc11ff345e4d58f\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Rasta\AndroidStudioProjects\RegexGolf\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="24.0.1"
-        sha1="240795de0a9452b67f38fa38a51573a87521567c">
-        <dex dex="C:\Users\Rasta\AndroidStudioProjects\RegexGolf\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_14be563ea459ec6e5eaf5e9f3588f9badd9edf32\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Rasta\AndroidStudioProjects\RegexGolf\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.1"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="C:\Users\Rasta\AndroidStudioProjects\RegexGolf\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_2d9e953cd98c6a18b31c5eaa3372e722ddc4a2ae\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Rasta\AndroidStudioProjects\RegexGolf\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.1"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="C:\Users\Rasta\AndroidStudioProjects\RegexGolf\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_0331187bff290167b95fb889c835c202ecd7ca5e\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Rasta\AndroidStudioProjects\RegexGolf\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
-        jumboMode="true"
-        revision="24.0.1"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="C:\Users\Rasta\AndroidStudioProjects\RegexGolf\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_31b210d5a80c4d51da729ff812c8ed49e2b2b1fa\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Rasta\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
-        jumboMode="true"
-        revision="24.0.1"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="C:\Users\Rasta\AndroidStudioProjects\RegexGolf\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_5f37fec4e86e8736f0a02bbae2f9f5cdb03bd10f\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Rasta\AndroidStudioProjects\RegexGolf\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.1"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="C:\Users\Rasta\AndroidStudioProjects\RegexGolf\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_91d71863e2116be13c5bfd6fa1e5f9bbee99f0f8\classes.dex" />
+        sha1="3bbb44fc8dc61dc965581eb47e9e6efd32da9578">
+        <dex dex="C:\Users\Rasta\Documents\GitHub\RegexGolf\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_00b1a79f4752b1fff2be8cc350da3b5899ea86ef\classes.dex" />
     </item>
 
 </items>
