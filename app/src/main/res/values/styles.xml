@@ -34,7 +34,7 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">36dp</item>
         <item name="android:layout_marginBottom">20dp</item>
-        <item name="android:background">#DCC837</item>
+        <item name="android:background">@color/NavajoWhite</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
