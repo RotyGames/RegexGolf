@@ -1,63 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:paddingTop="32dp"
-    android:paddingLeft="32dp"
-    android:paddingRight="32dp"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <Button
-        android:id="@+id/buttonPlay"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="Play"
-        android:onClick="onClickPlay"
-        android:textStyle="bold"
-        android:textSize="36dp" />
-    <Button
-        android:id="@+id/buttonSettings"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="Settings"
-        android:onClick="onClickSettings"
-        android:textStyle="bold"
-        android:textSize="36dp" />
-    <Button
-        android:id="@+id/buttonLeaderboard"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="Leaderboard"
-        android:onClick="onClickLeaderboard"
-        android:textStyle="bold"
-        android:textSize="36dp" />
-    <Button
-        android:id="@+id/buttonAboutUs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="About Us"
-        android:onClick="onClickAboutUs"
-        android:textStyle="bold"
-        android:textSize="36dp" />
-    <Button
-        android:id="@+id/buttonHelp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="Help"
-        android:onClick="onClickHelp"
-        android:textStyle="bold"
-        android:textSize="36dp" />
-    <Button
-        android:id="@+id/buttonExit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="Exit"
-        android:onClick="onClickExit"
-        android:textStyle="bold"
-        android:textSize="36dp" />
+android:orientation="vertical"
+android:paddingTop="32dp"
+android:paddingLeft="32dp"
+android:paddingRight="32dp"
+    android:background="#104C20"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<Button
+    style="@style/MenuButton"
+    android:id="@+id/buttonPlay"
+    android:text="@string/play"
+    android:onClick="onClickPlay" />
+<Button
+    style="@style/MenuButton"
+    android:id="@+id/buttonSettings"
+    android:text="@string/settings"
+    android:onClick="onClickSettings"/>
+<Button
+    style="@style/MenuButton"
+    android:id="@+id/buttonLeaderboard"
+    android:text="@string/leaderboard"
+    android:onClick="onClickLeaderboard" />
+<Button
+    style="@style/MenuButton"
+    android:id="@+id/buttonAboutUs"
+    android:text="@string/about_us"
+    android:onClick="onClickAboutUs" />
+<Button
+    style="@style/MenuButton"
+    android:id="@+id/buttonHelp"
+    android:text="@string/help"
+    android:onClick="onClickHelp"/>
+<Button
+    style="@style/MenuButton"
+    android:id="@+id/buttonExit"
+    android:text="@string/exit"
+    android:onClick="onClickExit" />
 </LinearLayout>

@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#104C20"
+    tools:context="rotygames.regexgolf.PlayMenuActivity">
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:paddingTop="32dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            style="@style/MenuButton"
+            android:id="@+id/buttonCampaign"
+            android:text="@string/campaign"
+            android:onClick="onClickCampaign"/>
+        <Button
+            style="@style/MenuButton"
+            android:id="@+id/buttonGenerated"
+            android:text="@string/generated"
+            android:onClick="onClickGenerated" />
+        <Button
+            style="@style/MenuButton"
+            android:id="@+id/buttonChallenge"
+            android:text="@string/challenge"
+            android:onClick="onClickChallenge"/>
+        <Button
+            style="@style/MenuButton"
+            android:id="@+id/buttonDuel"
+            android:text="@string/duel"
+            android:onClick="onClickDuel"/>
+        <Button
+            style="@style/MenuButton"
+            android:id="@+id/buttonWindings"
+            android:text="@string/windings"
+            android:onClick="onClickWindings"/>
+    </LinearLayout>
+
+</FrameLayout>

@@ -18,4 +18,25 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
+    <style name="FullscreenTheme" parent="AppThemeFullScreen">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="MenuButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">36dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:background">#DCC837</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
 </resources>

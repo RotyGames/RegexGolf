@@ -1,5 +1,6 @@
 package rotygames.regexgolf;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickPlay(View view) {
-        Toast.makeText(this, "You clicked PLAY!",
-                Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, PlayMenuActivity.class);
+        startActivity(intent);
     }
 
     public void onClickSettings(View view) {
