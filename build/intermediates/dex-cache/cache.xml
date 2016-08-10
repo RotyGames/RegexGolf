@@ -1,12 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
+<items version="2" />
 
-    <item
-        jar="C:\Users\Rasta\Documents\GitHub\RegexGolf\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="24.0.1"
-        sha1="3bbb44fc8dc61dc965581eb47e9e6efd32da9578">
-        <dex dex="C:\Users\Rasta\Documents\GitHub\RegexGolf\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_00b1a79f4752b1fff2be8cc350da3b5899ea86ef\classes.dex" />
-    </item>
-
-</items>
