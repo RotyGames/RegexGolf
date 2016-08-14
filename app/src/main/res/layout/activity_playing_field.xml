@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:background="@color/ForestGreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/regex_goes_here"
+        android:textSize="28sp"
+        android:textColor="@color/MeatBrown" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:paddingBottom="16dp"
+        android:baselineAligned="false">
+        <ListView
+            android:id="@+id/leftColumn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:divider="@android:color/transparent"
+            android:focusable="false"
+            />
+        <ListView
+            android:id="@+id/rightColumn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:divider="@android:color/transparent"
+            android:focusable="false"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonNextLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next_level"
+        style="@style/MenuButton"
+        />
+
+</LinearLayout>

@@ -4,7 +4,7 @@ android:orientation="vertical"
 android:paddingTop="32dp"
 android:paddingLeft="32dp"
 android:paddingRight="32dp"
-    android:background="#104C20"
+    android:background="@color/ForestGreen"
 android:layout_width="match_parent"
 android:layout_height="match_parent">
 <Button

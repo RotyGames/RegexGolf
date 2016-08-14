@@ -15,4 +15,6 @@
     <string name="about_us">About Us</string>
     <string name="help">Help</string>
     <string name="exit">Exit</string>
+    <string name="next_level">NEXT LEVEL</string>
+    <string name="regex_goes_here">Regex goes here</string>
 </resources>

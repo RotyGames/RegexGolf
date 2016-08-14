@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="leftColumnWords">
+        <item>Match</item>
+        <item>These</item>
+        <item>If</item>
+        <item>You</item>
+        <item>Can</item>
+    </string-array>
+    <string-array name="rightColumnWords">
+        <item>Don\'t</item>
+        <item>Match</item>
+        <item>These</item>
+        <item>It\'s</item>
+        <item>Bad</item>
+        <item>For</item>
+        <item>Your</item>
+        <item>Face</item>
+    </string-array>
+</resources>
