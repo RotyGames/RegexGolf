@@ -10,5 +10,8 @@
     <color name="Olive">#74842C</color>
     <color name="MeatBrown">#DCC837</color>
     <color name="ForestGreen">#104C20</color>
+    <color name="Salmon">#E98D79</color>
+    <color name="DarkCrimson">#962A18</color>
+    <color name="OkkerYellow">#F19E34</color>
     <color name="black_overlay">#66000000</color>
 </resources>

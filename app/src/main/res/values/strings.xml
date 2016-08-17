@@ -17,4 +17,9 @@
     <string name="exit">Exit</string>
     <string name="next_level">NEXT LEVEL</string>
     <string name="regex_goes_here">Regex goes here</string>
+    <string name="whats_a_regex">What is a regular expression\nA regular expression (or regex for short) is a sequence of characters that define a search pattern.</string>
+    <string name="whats_regex_golf">What is Regex Golf\nRegex golf is about finding a pattern that matches the words in the left column but doesn\'t match the ones in the right.\nThe goal is to use the least amount of characters to create such a regex, much like you try to hit the ball into the hole in golf using the least amount of strokes.</string>
+    <string name="help_basics">Basics\nSimply writing a character, or a string of characters means a word contains what you wrote.\nUsing brackets you can define alternatives.\nFor example, gr[ae]y matches both gray and grey.\nDashes help you shorten large groups of alternatives.\nFor example, dun[e-k] matches dune, dung, and dunk.\nUse the dot character the define wildcards that match any one character.</string>
+    <string name="regex_handbook">Regex handbook</string>
+    <string name="tap_to_expand">Tap on any topic to expand it</string>
 </resources>

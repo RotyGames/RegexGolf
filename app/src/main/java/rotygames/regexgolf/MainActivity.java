@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickHelp(View view) {
-        Toast.makeText(this, "You clicked HELP!",
-                Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, HelpActivity.class);
+        startActivity(intent);
     }
 
     public void onClickExit(View view) {
