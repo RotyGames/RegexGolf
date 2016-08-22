@@ -1,3 +1,4 @@
 .idea/*
 local.properties
 RegexGolf.iml
+*.lock
