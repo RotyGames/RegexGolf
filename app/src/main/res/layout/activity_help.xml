@@ -11,34 +11,45 @@
     android:background="@color/ForestGreen"
     tools:context="rotygames.regexgolf.HelpActivity">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/regex_handbook"
-        android:textAlignment="center"
-        android:textSize="32sp"
-        android:textColor="@color/NavajoWhite"
-        android:textStyle="bold"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/tap_to_expand"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textColor="@color/NavajoWhite"
-        android:textStyle="bold"
-        android:paddingBottom="12dp"/>
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/linearLayoutRoot"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        style="@style/HelpTextView"
-        android:text="@string/whats_a_regex"
-        />
-    <TextView
-        style="@style/HelpTextView"
-        android:text="@string/whats_regex_golf"
-        />
-    <TextView
-        style="@style/HelpTextView"
-        android:text="@string/help_basics"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/regex_handbook"
+                android:textAlignment="center"
+                android:textSize="32sp"
+                android:textColor="@color/NavajoWhite"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tap_to_expand"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/NavajoWhite"
+                android:textStyle="bold"
+                android:paddingBottom="12dp"/>
 
+            <TextView
+                style="@style/HelpTextView"
+                android:text="@string/whats_a_regex"
+                />
+            <TextView
+                style="@style/HelpTextView"
+                android:text="@string/whats_regex_golf"
+                />
+            <TextView
+                style="@style/HelpTextView"
+                android:text="@string/help_basics"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
