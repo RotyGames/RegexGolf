@@ -14,4 +14,8 @@
     <color name="DarkCrimson">#962A18</color>
     <color name="OkkerYellow">#F19E34</color>
     <color name="black_overlay">#66000000</color>
+
+    <color name="correct_match">#FF00FF00</color>
+    <color name="incorrect_match">#FFFF0000</color>
+    <color name="transparent">#00FFFFFF</color>
 </resources>
