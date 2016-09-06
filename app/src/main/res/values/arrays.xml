@@ -1,20 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="leftColumnWords">
-        <item>Match</item>
-        <item>These</item>
-        <item>If</item>
-        <item>You</item>
-        <item>Can</item>
+        <item>afoot</item>
+        <item>catfoot</item>
+        <item>dogfoot</item>
+        <item>fanfoot</item>
+        <item>foody</item>
+        <item>foolery</item>
+        <item>foolish</item>
+        <item>fooster</item>
+        <item>footage</item>
+        <item>foothot</item>
+        <item>footle</item>
+        <item>footpad</item>
+        <item>footway</item>
+        <item>hotfoot</item>
+        <item>jawfoot</item>
+        <item>mafoo</item>
+        <item>nonfood</item>
+        <item>padfoot</item>
+        <item>prefool</item>
+        <item>sfoot</item>
     </string-array>
     <string-array name="rightColumnWords">
-        <item>Don\'t</item>
-        <item>Match</item>
-        <item>These</item>
-        <item>It\'s</item>
-        <item>Bad</item>
-        <item>For</item>
-        <item>Your</item>
-        <item>Face</item>
+        <item>Atlas</item>
+        <item>Aymoro</item>
+        <item>Iberic</item>
+        <item>Mahran</item>
+        <item>Ormazd</item>
+        <item>Silipan</item>
+        <item>altared</item>
+        <item>chandoo</item>
+        <item>crenel</item>
+        <item>crooked</item>
+        <item>fardo</item>
+        <item>folksy</item>
+        <item>forest</item>
+        <item>hebamic</item>
+        <item>idgah</item>
+        <item>manlike</item>
+        <item>marly</item>
+        <item>palazzi</item>
+        <item>sixfold</item>
+        <item>tarrock</item>
     </string-array>
 </resources>

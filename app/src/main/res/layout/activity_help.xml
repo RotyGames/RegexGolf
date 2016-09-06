@@ -11,15 +11,7 @@
     android:background="@color/ForestGreen"
     tools:context="rotygames.regexgolf.HelpActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="none">
-        <LinearLayout
-            android:id="@+id/linearLayoutRoot"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -38,7 +30,15 @@
                 android:textColor="@color/NavajoWhite"
                 android:textStyle="bold"
                 android:paddingBottom="12dp"/>
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/linearLayoutRoot"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
             <TextView
                 style="@style/HelpTextView"
                 android:text="@string/whats_a_regex"
@@ -49,7 +49,10 @@
                 />
             <TextView
                 style="@style/HelpTextView"
-                android:text="@string/help_basics"/>
+                android:text="@string/help_single_character"/>
+            <TextView
+                style="@style/HelpTextView"
+                android:text="@string/help_multiple_characters"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
