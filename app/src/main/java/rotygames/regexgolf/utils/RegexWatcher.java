@@ -49,7 +49,7 @@ public class RegexWatcher implements TextWatcher {
         try {
             if (regex.length() == 0)
                 text.setBackgroundResource(R.color.transparent);
-            else if (text.getText().toString().matches(regex))
+            else if (text.getText().toString().contains(regex))
                 text.setBackgroundResource(matchColor);
             else
                 text.setBackgroundResource(doesntMatchColor);
