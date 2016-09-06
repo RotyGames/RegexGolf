@@ -26,7 +26,6 @@ public class CheckerTextView extends TextView {
 
     private CheckType type;
 
-
     public CheckerTextView(Context context) {
         super(context);
     }

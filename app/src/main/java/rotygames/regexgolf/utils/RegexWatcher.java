@@ -27,9 +27,9 @@ public class RegexWatcher implements TextWatcher {
         this.type = type;
         if (type == CheckerTextView.CheckType.TO_MATCH){
             matchColor = R.color.correct_match;
-            doesntMatchColor = R.color.incorrect_match;
+            doesntMatchColor = R.color.transparent;
         } else {
-            doesntMatchColor = R.color.correct_match;
+            doesntMatchColor = R.color.transparent;
             matchColor = R.color.incorrect_match;
         }
         regexContainer.addTextChangedListener(this);
