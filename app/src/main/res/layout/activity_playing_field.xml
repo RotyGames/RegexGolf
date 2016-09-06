@@ -13,7 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/regex_goes_here"
-        android:inputType="textNoSuggestions"
         android:textSize="28sp"
         android:textColor="@color/MeatBrown"
         android:inputType="textNoSuggestions"/>
