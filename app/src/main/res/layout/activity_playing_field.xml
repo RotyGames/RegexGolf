@@ -40,11 +40,11 @@
             android:focusable="false"
             />
     </LinearLayout>
-    <Button
+    <rotygames.regexgolf.inputs.NextOrSkipButton
         android:id="@+id/buttonNextLevel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/next_level"
+        android:text="SKIP LEVEL"
         style="@style/MenuButton"
         />
 

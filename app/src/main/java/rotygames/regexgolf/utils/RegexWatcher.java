@@ -5,6 +5,8 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.widget.EditText;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
 import rotygames.regexgolf.R;
@@ -46,14 +48,18 @@ public class RegexWatcher implements TextWatcher {
     @Override
     public void afterTextChanged(Editable editable) {
         String regex = editable.toString();
-        try {
-            if (regex.length() == 0)
+        if (regex.length() != 0) {
+            try {
+                Matcher matcher = Pattern.compile(regex).matcher(text.getText());
+
+                if (matcher.find())
+                    text.setBackgroundResource(matchColor);
+                else
+                    text.setBackgroundResource(doesntMatchColor);
+            } catch (PatternSyntaxException e) {
                 text.setBackgroundResource(R.color.transparent);
-            else if (text.getText().toString().contains(regex))
-                text.setBackgroundResource(matchColor);
-            else
-                text.setBackgroundResource(doesntMatchColor);
-        } catch (PatternSyntaxException e) {
+            }
+        } else {
             text.setBackgroundResource(R.color.transparent);
         }
         text.invalidate();

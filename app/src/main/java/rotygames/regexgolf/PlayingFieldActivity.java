@@ -43,12 +43,12 @@ public class PlayingFieldActivity extends AppCompatActivity {
 
     private void fillListViews(){
         try {
-            CharSequence[] leftWords = getResources().getTextArray(R.array.leftColumnWords);
+            String[] leftWords = getResources().getStringArray(R.array.leftColumnWords);
             CustomItemAdapter leftAdapter = new CustomItemAdapter(this, R.layout.custom_list_item,  leftWords, regexContainer, CheckerTextView.CheckType.TO_MATCH);
             leftColumn.setAdapter(leftAdapter);
 
 
-            CharSequence[] rightWords = getResources().getTextArray(R.array.rightColumnWords);
+            String[] rightWords = getResources().getStringArray(R.array.rightColumnWords);
             CustomItemAdapter rightArrayAdapter = new CustomItemAdapter(this, R.layout.custom_list_item,  rightWords, regexContainer, CheckerTextView.CheckType.TO_NOT_MATCH);
             rightColumn.setAdapter(rightArrayAdapter);
             
