@@ -69,21 +69,26 @@ public class NextOrSkipButton extends Button implements View.OnClickListener, Te
     public void afterTextChanged(Editable editable) {
         String regex = editable.toString();
         Boolean tempIsCorrect = Boolean.TRUE;
-        Pattern pattern = Pattern.compile(regex);
-        Matcher leftMatcher = pattern.matcher("");
-        Matcher rightMatcher = pattern.matcher("");
-        for (int index = 0; index < 20; index++) {
-            leftMatcher.reset(leftAdapter.getItem(index));
-            rightMatcher.reset(rightAdapter.getItem(index));
-            if (!leftMatcher.find() || rightMatcher.find()) {
-                tempIsCorrect = false;
-                break;
+        try {
+            Pattern pattern = Pattern.compile(regex);
+            Matcher leftMatcher = pattern.matcher("");
+            Matcher rightMatcher = pattern.matcher("");
+            for (int index = 0; index < 20; index++) {
+                leftMatcher.reset(leftAdapter.getItem(index));
+                rightMatcher.reset(rightAdapter.getItem(index));
+                if (!leftMatcher.find() || rightMatcher.find()) {
+                    tempIsCorrect = false;
+                    break;
+                }
             }
+            isCorrectRegex = tempIsCorrect;
+        } catch (PatternSyntaxException e) {
+            isCorrectRegex = false;
         }
-        isCorrectRegex = tempIsCorrect;
         if (isCorrectRegex)
             this.setText("NEXT LEVEL");
         else
             this.setText("SKIP LEVEL");
+
     }
 }
