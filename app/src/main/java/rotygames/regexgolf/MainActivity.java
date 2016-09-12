@@ -1,9 +1,11 @@
 package rotygames.regexgolf;
 
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -35,37 +37,34 @@ public class MainActivity extends AppCompatActivity {
         }
 
         protected String doInBackground(Void... urls) {
+            try {
+                URL url = new URL("http://52.208.157.181:1994/api/Emperor");
+                HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                 try {
-                    URL url = new URL("http://52.208.157.181:1994/api/Emperor");
-                    HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-                    try {
-                        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
-                        String quote = bufferedReader.readLine();
-                        bufferedReader.close();
-                        return quote;
-                    }
-                    finally{
-                        urlConnection.disconnect();
-                    }
+                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
+                    String quote = bufferedReader.readLine();
+                    bufferedReader.close();
+                    return quote;
+                } finally {
+                    urlConnection.disconnect();
                 }
-                catch(Exception e) {
-                    Log.e("ERROR", e.getMessage(), e);
-                    return null;
-                }
+            } catch (Exception e) {
+                Log.e("ERROR", e.getMessage(), e);
+                return null;
+            }
         }
 
         protected void onPostExecute(String response) {
-            if(response == null) {
+            if (response == null) {
                 response = "THERE WAS AN ERROR";
             }
             Log.i("INFO", response);
 
             TextView quoteOfTheDay = (TextView) findViewById(R.id.quoteOfTheDay);
 
-            quoteOfTheDay.setText("\t            " + response.replaceAll("^\"|\"$", ""));
+            quoteOfTheDay.setText("\t                  " + response.replaceAll("^\"|\"$", ""));
         }
     }
-
 
 
     public void onClickPlay(View view) {
@@ -91,6 +90,24 @@ public class MainActivity extends AppCompatActivity {
     public void onClickHelp(View view) {
         Intent intent = new Intent(this, HelpActivity.class);
         startActivity(intent);
+    }
+
+    public void onClickQuote(View view) {
+        TextView textView = (TextView) view;
+
+        if (textView.getEllipsize() != null) {
+            textView.setText(textView.getText().toString().trim());
+            textView.setMaxLines(4);
+            textView.setSingleLine(false);
+            textView.setEllipsize(null);
+        } else {
+            textView.setText("\t                 " + textView.getText().toString());
+            textView.setMaxLines(1);
+            textView.setSingleLine(true);
+            textView.setEllipsize(TextUtils.TruncateAt.MARQUEE);
+
+        }
+
     }
 
     public void onClickExit(View view) {
