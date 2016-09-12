@@ -1,40 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:orientation="vertical"
-android:paddingTop="32dp"
-android:paddingLeft="32dp"
-android:paddingRight="32dp"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/ForestGreen"
-android:layout_width="match_parent"
-android:layout_height="match_parent">
-<Button
-    style="@style/MenuButton"
-    android:id="@+id/buttonPlay"
-    android:text="@string/play"
-    android:onClick="onClickPlay" />
-<Button
-    style="@style/MenuButton"
-    android:id="@+id/buttonSettings"
-    android:text="@string/settings"
-    android:onClick="onClickSettings"/>
-<Button
-    style="@style/MenuButton"
-    android:id="@+id/buttonLeaderboard"
-    android:text="@string/leaderboard"
-    android:onClick="onClickLeaderboard" />
-<Button
-    style="@style/MenuButton"
-    android:id="@+id/buttonAboutUs"
-    android:text="@string/about_us"
-    android:onClick="onClickAboutUs" />
-<Button
-    style="@style/MenuButton"
-    android:id="@+id/buttonHelp"
-    android:text="@string/help"
-    android:onClick="onClickHelp"/>
-<Button
-    style="@style/MenuButton"
-    android:id="@+id/buttonExit"
-    android:text="@string/exit"
-    android:onClick="onClickExit" />
-</LinearLayout>
+    android:orientation="vertical"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:paddingTop="32dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonPlay"
+            style="@style/MenuButton"
+            android:onClick="onClickPlay"
+            android:text="@string/play" />
+
+        <Button
+            android:id="@+id/buttonSettings"
+            style="@style/MenuButton"
+            android:onClick="onClickSettings"
+            android:text="@string/settings" />
+
+        <Button
+            android:id="@+id/buttonLeaderboard"
+            style="@style/MenuButton"
+            android:onClick="onClickLeaderboard"
+            android:text="@string/leaderboard" />
+
+        <Button
+            android:id="@+id/buttonAboutUs"
+            style="@style/MenuButton"
+            android:onClick="onClickAboutUs"
+            android:text="@string/about_us" />
+
+        <Button
+            android:id="@+id/buttonHelp"
+            style="@style/MenuButton"
+            android:onClick="onClickHelp"
+            android:text="@string/help" />
+
+        <Button
+            android:id="@+id/buttonExit"
+            style="@style/MenuButton"
+            android:onClick="onClickExit"
+            android:text="@string/exit" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/quoteOfTheDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:paddingBottom="25dp"
+
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="@color/NavajoWhite"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+</RelativeLayout>

@@ -27,12 +27,10 @@ public class PlayingFieldActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d("HEREE", "on create eleje");
         setContentView(R.layout.activity_playing_field);
         leftColumn = (ListView) findViewById(R.id.leftColumn);
         rightColumn = (ListView) findViewById(R.id.rightColumn);
         regexContainer = (EditText) findViewById(R.id.regexContainer);
-        Log.d("HEREE", "on create vége");
         fillListViews();
     }
 
