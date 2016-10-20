@@ -1,6 +1,5 @@
 package rotygames.regexgolf;
 
-import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -10,8 +9,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -83,8 +80,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickAboutUs(View view) {
-        Toast.makeText(this, "You clicked ABOUT US!",
-                Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, AboutUsActivity.class);
+        startActivity(intent);
     }
 
     public void onClickHelp(View view) {
