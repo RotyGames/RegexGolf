@@ -27,7 +27,7 @@ public class AboutUsActivity extends AppCompatActivity {
 
 
     public void onClickDonate(View view) {
-        Uri donateUri = Uri.parse("https://www.paypal.com/yt/cgi-bin/webscr?cmd=_xclick");
+        Uri donateUri = Uri.parse("https://www.paypal.com/yt/cgi-bin/webscr?cmd=_xclick&business=karthurg@gmail.com");
         Intent intent = new Intent(Intent.ACTION_VIEW, donateUri);
         startActivity(intent);
     }
