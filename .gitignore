@@ -38,3 +38,5 @@ ehthumbs.db
 Thumbs.db
 build/intermediates/dex-cache/cache.xml
 build/generated/mockable-android-23.jar
+
+\.idea/

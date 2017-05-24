@@ -3,6 +3,7 @@ package rotygames.regexgolf;
 import android.animation.ObjectAnimator;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
@@ -94,12 +95,12 @@ public class HelpActivity extends AppCompatActivity {
                 if(textViewIsCollapsed(textView))
                 {
                     newMaxLines = textView.getLineCount();
-                    textView.setTextColor(Color.parseColor(getResources().getString(R.color.MeatBrown)));
+                    textView.setTextColor(ContextCompat.getColor(getApplicationContext(),R.color.MeatBrown));
                 }
                 else
                 {
                     newMaxLines = collapsedMaxLines;
-                    textView.setTextColor(Color.parseColor(getResources().getString(R.color.OkkerYellow)));
+                    textView.setTextColor(ContextCompat.getColor(getApplicationContext(),R.color.OkkerYellow));
                 }
                 ObjectAnimator animation = ObjectAnimator.ofInt(textView, "maxLines",newMaxLines);
                 animation.setDuration(100).start();
