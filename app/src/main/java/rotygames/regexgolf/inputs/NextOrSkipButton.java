@@ -35,6 +35,8 @@ public class NextOrSkipButton extends Button implements View.OnClickListener, Te
 
     public NextOrSkipButton(Context context, AttributeSet attrs) {
         super(context, attrs);
+        if (isInEditMode())
+            return;
         this.playingField = (PlayingFieldActivity) context;
         isCorrectRegex = false;
         setOnClickListener(this);
@@ -43,6 +45,8 @@ public class NextOrSkipButton extends Button implements View.OnClickListener, Te
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
+        if (isInEditMode())
+            return;
         regexContainer = EditText.class.cast(getRootView().findViewById(R.id.regexContainer));
         regexContainer.addTextChangedListener(this);
         leftAdapter = CustomItemAdapter.class.cast(ListView.class.cast(playingField.findViewById(R.id.leftColumn)).getAdapter());
@@ -67,6 +71,8 @@ public class NextOrSkipButton extends Button implements View.OnClickListener, Te
 
     @Override
     public void afterTextChanged(Editable editable) {
+        if (isInEditMode())
+            return;
         String regex = editable.toString();
         Boolean tempIsCorrect = Boolean.TRUE;
         try {
