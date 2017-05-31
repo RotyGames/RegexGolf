@@ -18,4 +18,14 @@
     <color name="correct_match">#FF00FF00</color>
     <color name="incorrect_match">#FFFF0000</color>
     <color name="transparent">#00FFFFFF</color>
+
+    <color name="green_1">#D7F970</color>
+    <color name="green_2">#CBF93E</color>
+    <color name="green_3">#B7F200</color>
+    <color name="green_4">#94B62D</color>
+    <color name="green_5">#779E00</color>
+    <color name="green_6">#5A7504</color>
+    <color name="green_correct_match">#FF00CF00</color>
+    <color name="green_incorrect_match">#FFFF0000</color>
+    <color name="green_color_accent">#FFFF4081</color>
 </resources>
