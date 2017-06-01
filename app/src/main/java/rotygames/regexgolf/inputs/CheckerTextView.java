@@ -3,6 +3,7 @@ package rotygames.regexgolf.inputs;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.os.Bundle;
+import android.support.v7.widget.AppCompatTextView;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
@@ -15,7 +16,7 @@ import rotygames.regexgolf.utils.RegexWatcher;
 /**
  * Created by kovi on 9/5/16.
  */
-public class CheckerTextView extends TextView {
+public class CheckerTextView extends AppCompatTextView {
 
     public enum CheckType{
         TO_MATCH,
