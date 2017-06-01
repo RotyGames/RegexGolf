@@ -48,8 +48,9 @@
         android:orientation="horizontal"
         android:paddingBottom="16dp">
 
-        <ListView
+        <rotygames.regexgolf.containers.CheckedListView
             android:id="@+id/leftColumn"
+            app:regexContainer="@id/regexContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -64,8 +65,9 @@
             android:layout_marginStart="2dp"
             android:background="@color/green_6" />
 
-        <ListView
+        <rotygames.regexgolf.containers.CheckedListView
             android:id="@+id/rightColumn"
+            app:regexContainer="@id/regexContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
