@@ -1,8 +1,10 @@
 package rotygames.regexgolf.utils;
 
+import android.support.v4.content.ContextCompat;
 import android.text.Editable;
+import android.text.SpannableString;
 import android.text.TextWatcher;
-import android.util.Log;
+import android.text.style.ForegroundColorSpan;
 import android.widget.EditText;
 
 import java.util.regex.Matcher;
@@ -17,23 +19,26 @@ import rotygames.regexgolf.inputs.CheckerTextView;
  */
 public class RegexWatcher implements TextWatcher {
 
-    private CheckerTextView text;
+    protected CheckerTextView textView;
 
-    private CheckerTextView.CheckType type;
+    protected CheckerTextView.CheckType type;
 
-    private int matchColor;
-    private int doesntMatchColor;
+    protected int matchColor;
+
+    protected SpannableString m_styledString;
+
+    protected ForegroundColorSpan m_span;
 
     public RegexWatcher(CheckerTextView checkThis, EditText regexContainer, CheckerTextView.CheckType type) {
-        this.text = checkThis;
+        this.textView = checkThis;
         this.type = type;
-        if (type == CheckerTextView.CheckType.TO_MATCH){
-            matchColor = R.color.correct_match;
-            doesntMatchColor = R.color.transparent;
+        if (type == CheckerTextView.CheckType.TO_MATCH) {
+            matchColor = ContextCompat.getColor(textView.getContext(), R.color.green_correct_match);
         } else {
-            doesntMatchColor = R.color.transparent;
-            matchColor = R.color.incorrect_match;
+            matchColor = ContextCompat.getColor(textView.getContext(), R.color.green_incorrect_match);
         }
+        m_styledString = null;
+        m_span = null;
         regexContainer.addTextChangedListener(this);
     }
 
@@ -50,18 +55,48 @@ public class RegexWatcher implements TextWatcher {
         String regex = editable.toString();
         if (regex.length() != 0) {
             try {
-                Matcher matcher = Pattern.compile(regex).matcher(text.getText());
+                Matcher matcher = Pattern.compile(regex).matcher(getStyledString());
 
                 if (matcher.find())
-                    text.setBackgroundResource(matchColor);
+                    handleMatch(matcher.start(), matcher.end());
                 else
-                    text.setBackgroundResource(doesntMatchColor);
+                    handleDoesntMatch();
             } catch (PatternSyntaxException e) {
-                text.setBackgroundResource(R.color.transparent);
+                handleDefault();
             }
         } else {
-            text.setBackgroundResource(R.color.transparent);
+            handleDefault();
         }
-        text.invalidate();
+        textView.invalidate();
+    }
+
+    protected void handleMatch(int matchStart, int matchEnd) {
+        handleDefault();
+        SpannableString styledString = new SpannableString(textView.getText());
+        styledString.setSpan(getSpan(), matchStart, matchEnd, 0);
+        textView.setText(styledString);
+    }
+
+    protected void handleDoesntMatch() {
+        handleDefault();
+    }
+
+    protected void handleDefault() {
+        SpannableString styledString = getStyledString();
+        styledString.removeSpan(getSpan());
+        textView.setText(styledString);
+    }
+
+    protected SpannableString getStyledString() {
+        if (m_styledString == null) {
+            m_styledString = new SpannableString(textView.getText());
+        }
+        return m_styledString;
+    }
+
+    public ForegroundColorSpan getSpan() {
+        if (m_span == null)
+            m_span = new ForegroundColorSpan(matchColor);
+        return m_span;
     }
 }
