@@ -12,6 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import rotygames.regexgolf.R;
+import rotygames.regexgolf.containers.CheckedListView;
 import rotygames.regexgolf.inputs.CheckerTextView;
 
 /**
@@ -19,18 +20,12 @@ import rotygames.regexgolf.inputs.CheckerTextView;
  */
 public class CustomItemAdapter extends ArrayAdapter<String> {
 
-    private EditText regexContainer;
-
-    private CheckerTextView.CheckType type;
-
     private Context context;
 
 
-    public CustomItemAdapter(Context context, int textViewResourceId, String[] objects, EditText regexContainer, CheckerTextView.CheckType type) {
+    public CustomItemAdapter(Context context, int textViewResourceId, String[] objects) {
         super(context, textViewResourceId, objects);
         this.context = context;
-        this.regexContainer = regexContainer;
-        this.type = type;
     }
 
     @Override
@@ -39,11 +34,13 @@ public class CustomItemAdapter extends ArrayAdapter<String> {
         if (v == null) {
             LayoutInflater inflater = LayoutInflater.from(context);
             v = inflater.inflate(R.layout.custom_list_item, null);
-            CheckerTextView checkerText =(CheckerTextView) v.findViewById(R.id.word);
-            checkerText.initializeWatcher(regexContainer, type);
         }
-        CheckerTextView txtWord = (CheckerTextView) v.findViewById(R.id.word);
-        txtWord.setText(getItem(position));
+        CheckerTextView textView = (CheckerTextView) v;
+        textView.setText(getItem(position));
+
+        CheckedListView listView = (CheckedListView) parent;
+        listView.highlightNewItem(textView);
+
         return v;
     }
 }

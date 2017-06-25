@@ -10,6 +10,8 @@
     </declare-styleable>
     <declare-styleable name="CheckedListView">
         <attr name="regexContainer" format="reference"/>
+        <attr name="matchColor" format="color"/>
+        <attr name="requiredMatchResult" format="boolean"/>
     </declare-styleable>
 
 </resources>

@@ -15,10 +15,10 @@
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_rect"
         android:orientation="vertical"
-        android:paddingTop="2dp"
         android:paddingBottom="2dp"
+        android:paddingEnd="8dp"
         android:paddingStart="8dp"
-        android:paddingEnd="8dp">
+        android:paddingTop="2dp">
 
         <!-- TODO If you remove background tag, unnecessary space will appear around EditText -->
         <EditText
@@ -50,13 +50,14 @@
 
         <rotygames.regexgolf.containers.CheckedListView
             android:id="@+id/leftColumn"
-            app:regexContainer="@id/regexContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:divider="@android:color/transparent"
             android:dividerHeight="2dp"
-            android:focusable="false" />
+            android:focusable="false"
+            app:matchColor="@color/green_correct_match"
+            app:regexContainer="@id/regexContainer" />
 
         <View
             android:layout_width="1dp"
@@ -67,13 +68,14 @@
 
         <rotygames.regexgolf.containers.CheckedListView
             android:id="@+id/rightColumn"
-            app:regexContainer="@id/regexContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:divider="@android:color/transparent"
             android:dividerHeight="2dp"
-            android:focusable="false" />
+            android:focusable="false"
+            app:matchColor="@color/green_incorrect_match"
+            app:regexContainer="@id/regexContainer" />
     </android.support.v7.widget.LinearLayoutCompat>
 
     <rotygames.regexgolf.inputs.NextOrSkipButton
