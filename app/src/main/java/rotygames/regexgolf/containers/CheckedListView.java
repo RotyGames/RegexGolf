@@ -119,7 +119,7 @@ public class CheckedListView extends ListView {
         if (allMatchIsCorrect == false) {
             setBackgroundResource(0);
         } else {
-            setBackgroundResource(R.drawable.correct);
+            // TODO set background that tells information about list view state
         }
 
     }
