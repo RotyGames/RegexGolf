@@ -19,7 +19,7 @@ public class AboutUsActivity extends AppCompatActivity {
 
         TextView aboutUs = (TextView) findViewById(R.id.textViweAboutUs);
         aboutUs.setMovementMethod(LinkMovementMethod.getInstance());
-        String text = "<div>Contact us via <a href='mailto:r.tamas.szabo@gmail.com'>e-mail!</a></div><div>View the source code on <a href='http://www.github.com/RotyGames/RegexGolf'>GitHub!</a></div>";
+        String text = "<div>Contact us via <a href='mailto:...'>e-mail!</a></div><div>View the source code on <a href='http://www.github.com/RotyGames/RegexGolf'>GitHub!</a></div>";
         aboutUs.setText(Html.fromHtml(text));
 
 
